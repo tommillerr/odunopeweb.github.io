@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox | Home</title>
+		<meta mame="veiwport" content="width=device-width initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/flexboxstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+		<link rel="stylesheet" type="text/css" href="../../style/font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header id="main-header"><!--to distinguish from header on othr pages-->
+			<div class="container"><!-- add margin auto in css to center element-->
+				<div class="row center-xs end-sm end-md end-lg middle-xs middle-sm middle-md middle-lg"><!--align content to end/right, center for xs-->
+					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+						<a href="flexbox.html"><h1><span class="primary-text">Mam</span>sung</h1></a>
+					</div>
+					<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+						<nav id="navbar">
+							<ul>
+								<li class="current"><a class="current" href="flexbox.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="showcase"><!--jumbatron section-->
+			<div class="container"><!--placed within for content, i need showcase to span entire width-->
+				<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-lg"><!--verical an horixontal allignment-->
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 showcase-content"><!--showcase-content class-->
+						<h1>Discover <span class="primary-text">Mamsung S8</span></h1>
+						<p>Futuristic. Innovative. More than a smartphone</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="features">
+			<div class="container">
+				<div class="row center-xs center-sm center-md- center-lg">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h2>Core Features</h2>
+						<p>What's Included</p>
+						<div class="row center-xs center-sm center-md center-lg"><!--NEEDED? It automatically takes alignment from parent row-->
+							<div class="col-xs-12 col-sm-4 col-md-4 cold-lg-4">
+								<i class="fa fa-dashboard"></i>
+								<h4>Fastest Phone Ever</h4>
+								<p>New Snapdragon 6000 inside</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 cold-lg-4">
+								<i class="fa fa-line-chart"></i>
+								<h4>Growing together</h4>
+								<p>Guaranteed software support and performace updates forever*</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<i class="fa fa-users"></i>
+								<h4>Unbeatable Customer Support</h4>
+								<p>Customer service assistance at you dusposal anytime, anywhere</p>
+							</div>
+						</div><!--row 1-->
+						<div class="row center-xs center-sm center-md- center-lg"><!--NEEDED>-->
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<i class="fa fa-rocket"></i>
+								<h4>Roam Anywhere</h4>
+								<p>Use your calls, text and data anywhere, even in space</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<i class="fa fa-question-circle-o"></i>
+								<h4>New Wixby Assistant</h4>
+								<p>Advanced AI assistant at your disposal</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<i class="fa fa-plug"></i>
+								<h4>Super Fast Charging</h4>
+								<p>Complete charger in under 5 minutes*</p>
+							</div>
+						</div><!--row 2-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="info">
+			<container>
+				<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg"> <!-- the largest element defines the height but the smaller elemet will alighn vertically-->
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<img src="img/samsung-s8.png"><!--Set width to 100% of container in css-->
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<h2>More Features</h2>
+						<ul>
+							<li><i class="fa fa-check"></i>Wifi Capabilities</li>
+							<li><i class="fa fa-check"></i>Bluetooth 6.9</li>
+							<li><i class="fa fa-check"></i>Face Recognition technology</li>
+							<li><i class="fa fa-check"></i>Free Calls to Mamsung users on Mars</li>
+						</ul>
+					</div>
+				</div>
+			</container>
+		</section>
+		<section id="company">
+			<div class="container">
+				<div class="row center-xs">
+					<div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><i class="fa fa-phone"></i>0750729471</li>
+							<li><i class="fa fa-envelope"></i>Mamsung@flexbox.com</li>
+							<li><i class="fa fa-map"></i>32 coding avenue</li>
+						</ul>
+					</div>
+					<div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+						<h4>About Us</h4>
+						<p>Futuristic tech company</p>
+					</div>
+					<div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+						<h4>Newsletter</h4>
+						<p>Enter email to subscribe</p>
+						<form><!--Research html forms, use javascript in final version>-->
+							<input type="text" name="email" placeholder="Enter Email">
+							<button type="submit" name="button">Submit</button>
+						</form>
+					</div>
+				</div><!--row end-->
+			</div>
+		</section>
+		<footer id="main-footer">
+			<div class="container">
+				<div class="row center-xs center-sm center-md center-lg">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>Copyright &copy; 2018 | Odun Ope</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

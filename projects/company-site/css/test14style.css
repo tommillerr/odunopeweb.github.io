@@ -1,0 +1,333 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0; /*IS THIS NEEDED / ADDED OFTEN?*/
+}
+
+body {
+	color: #67737A; /*BLUEISH GREY only added to make website look nice during development*/
+	font-family: 'Alegreya sans', sans-serif;
+	background-color: #C3D7DF;
+}
+
+h2 {/* TUTORIAL STARTED WITH FONT STYLING FIRST BUT I THINK IT MAKES MORE SENSE TO ADDRESS STRUCTURE FIRSTS*/
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 1%;
+	color: #f5f5f5;
+}
+
+h3 {
+	font-size: 1.75em;
+	line-height: 1.5; /*OR USE PADDING?*/
+	font-weight: 400;
+	color: #f5f5f5;
+	text-align: center;
+}
+
+p {
+	font-size: 1.6em;
+	line-height: 1.5; /*USE PERCENTAGES??*/
+	padding: 3%;
+	text-indent: 2%;
+	text-align: justify; /*SQUARE NEWSPAPER LOOK*/
+	color: #f5f5f5;
+}
+
+header {
+	background-color: #6991AC;
+	width: 100%;
+	height: 80px;
+}
+
+.headwrap {
+	max-width: 1200px;
+	margin: auto;
+}
+
+#logo {
+	background-image: url("../rocket-design/img/RD.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 60px;
+	float: left;
+	margin: 20px;
+}
+
+nav {
+	float: right;
+	padding: 20px;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	float: left; /*FLOAT TO THE LEFT OF THE UNORDRED LIST */
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #f5f5f5;
+
+}
+nav a:hover, .current {
+	color: #C3D7DF;
+}
+
+#menu-icon {
+	background-image: url("../rocket-design/img/nav.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	display: hidden;
+}
+/*
+a:hover#menu-icon { PREFERE WITHOUT MENU ICON
+	border: 1px solid white;
+}*/
+
+/* BANNER */
+.banner {
+	width: 100%;
+	background-color: #6991AC; /*PNG IMAGE ALLOWS FOR SETTING BACKGROUND COLOUR*/
+}
+
+.banner-wrap {
+	width: 95%;
+	margin: auto;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+}
+/*
+.bannerimage { ATTEMPT TO IMPLEMENT BACKGROUND IMAGE IN BANNER FAILED. DIFFICULTY WITH RESPONSIVE SIXING. BEST TO USE IMG.
+	background-image: url("../rocket-design/img/rocket_design.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 595px;              
+}*/ 
+
+/*MAIN GRID*/
+
+.main-wrap { /*NEEDED BECAUSE THE GRID DOESN'T HAVE A WIDTH*/
+	width: 100%;
+	margin: auto;
+}
+
+.maingrid img {
+	max-width: 100%;
+	height: auto;
+	width: auto; /*NEEDED?*/
+	margin-bottom: -1%;  /*TO CREATE OVERFLOW LOOK OF ELEMENT BELOW?? EXPERIMENT -- USED with aligh-self:end on container*/ 
+}
+
+.maingrid {
+	display: grid;
+	margin: auto;
+	background-color: #c3d7df;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows:  auto auto auto auto auto;
+	grid-template-areas: "top1 top1 top1 top2 top2 top2 top3 top3 top3 top4 top4 top4"
+						 "midtopl midtopl midtopl midtopl midtopl midtopl midtopr midtopr midtopr midtopr midtopr midtopr"
+						 "midmidl midmidl midmidl midmidl midmidl midmidl midmidr midmidr midmidr midmidr midmidr midmidr"
+						 "midlowl midlowl midlowl midlowl midlowl midlowl midlowr midlowr midlowr midlowr midlowr midlowr"
+						 "low1 low1 low1 low1 low2 low2 low2 low2 low3 low3 low3 low3" ;
+}
+/*200px 400px 400px 325px 400px*/
+.gridtop {
+	text-align: center;
+	padding: 13% 0 4% 0;
+}
+
+.gridtop i {
+	color: #f0f0f0;
+	font-size: 5em;
+}
+
+.html {
+	grid-area: top1;
+	background-color: #f1AA90;
+}
+.css {
+	grid-area: top2;
+	background-color: #beb9ad;
+}
+.seo {
+	grid-area: top3;
+	background-color: #aadcd2;
+}
+.social {
+	grid-area: top4;
+	background-color: #a2b2c1;
+}
+
+.midtopleft {
+	grid-area: midtopl;
+	align-self: end;
+}
+.midtopright {
+	grid-area: midtopr;
+	background-color: #a2b2c1;
+	padding-top: 5%;
+	align-self: start;
+}
+
+.midmidleft {
+	grid-area: midmidl;
+	background-color: #beb9ad;
+	padding-top: 2%;
+	align-self: start; 
+}
+.midmidright {
+	grid-area: midmidr;
+	align-self: end;
+}
+
+.midlowleft {
+	grid-area: midlowl;
+	align-self: end;
+}
+.midlowright {
+	grid-area: midlowr;
+	background-color: #f1aa90;
+	padding-top: 1%;
+	align-self: start;
+}
+
+.bottom1 {
+	grid-area: low1;
+	background-color: #a2b2c1;
+}
+.bottom2 {
+	grid-area: low2;
+	background-color: #beb9ad;
+}
+.bottom3 {
+	grid-area: low3;
+	background-color: #aadcd2;
+}
+/*GRID END*/
+
+/*FOOTER*/
+.gridfooter {
+	background-color: #aadcd2;
+	padding-bottom: 1%;
+}
+
+.footsocial {
+	background-color: #6991AC;
+	padding: 2% 0;
+}
+
+.footsocial i {
+	color: #C3D7DF;
+	font-size: 4.5em;
+}
+.footsocial i:hover {
+	color: #f5f5f5;
+}
+.footsocial ul {
+	text-align: center; 
+}
+.footsocial li {
+	display: inline-block;
+	margin: 0 3.5% 0 3.5%;
+}
+
+.socket {
+	background-color: #544b59;
+	border-top: 1px solid #aadcd2;
+}
+
+.socket p {
+	padding: 1%;
+}
+
+p::selection {
+	background-color: #6cbdbd;
+}
+
+/* -----MEDIA QUERIES----- */
+
+@media only screen and (max-width: 768px) {
+	h2 {
+		font-size: 1.75em;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	p {
+		font-size: 1.25em;
+	}
+
+	header {
+		position: fixed;
+		z-index: 5;
+	}
+	#logo {
+		/*margin: 15px 0 10px -25px;*/
+		background-image: url("../rocket-design/img/RD_mobile.png");
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute; /*ADDRESSES FLICKERING AND HOLDS IN PLACE*/
+		right: 20px;
+		width: 32%;
+		background-color: #6991ac;
+		border: 1px solid white;
+		border-radius: 8px 0px 2px 2px;
+	}
+
+
+	nav li {
+		text-align: center;
+		width: 100%; /*MUST BE ADDED TO MAKE TEXT ALIGN CENTER WORK*/
+		margin: 0; /* MARGIN FROM SOMEWHERE DISTORTING LI*/
+		padding: 5% 0;
+		font-size: 1.3em;
+
+	}
+	/*nav li:hover {
+		border-bottom: 1px solid white;
+		border-top: 1px solid white;
+	}
+	nav li:first-child:hover {
+		border-top: none;
+	}
+	nav li:last-child:hover {
+		border-bottom: none;
+	}*/
+	nav:hover ul {
+		display: block;
+	}
+
+	.banner {
+		padding-top: 86px;
+	}
+
+	.maingrid {
+		display: block; /* REMOVES GRID AND GRID PROPERTIES TO DISPLAY WITH NATURAL FLOW*/
+	}
+
+	.footsocial i {
+		font-size: 3em;
+	}
+	.gridtop {
+		padding: 6% 0 2% 0;
+	}
+	.gridtop i {
+		font-size: 4em;
+	}
+}

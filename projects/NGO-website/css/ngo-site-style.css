@@ -1,0 +1,632 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Muli', sans-serif;
+}
+
+header {
+	background-color: #178DBA;
+	width: 100%;
+	position: fixed;
+	z-index: 11;
+}
+
+header.row, section.row, footer.row {
+	margin-left: 0;
+}
+p, h1, h2, a, i {
+	color: #fff;
+}
+
+#logo a {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+#nav i {
+	font-size: 2.5em;
+	z-index: 10;
+	position: relative;
+	top: 50%;
+}
+
+#logo i {
+	padding-left: 5px;
+}
+
+#search {
+	background-color: #20C1FF;
+	align-self: stretch; /* !!!! Used to make search box 100% height of header bar !!!*/
+	text-align: center;
+}
+
+#search i {
+	font-size: 2em;
+	color: #208DFF;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.donate {
+	display: inline-block;
+	color: #FF3E00;
+	background-color: #fff;
+	padding: 10px 70px;
+	border-radius: 10px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-family: arial;
+	font-weight: bold;
+}
+
+/* SLIDESHOW */
+
+.slideshow {
+	position: relative; /* !!! Needed for absolute positioning of arrows*/
+	width: 100%;
+	height: 100%;
+	/*border-bottom: 2px solid rgba(255,83,13,0.5);*/
+	box-shadow: 0 1px 5px rgba(255,83,13,0.5); /* CROSS THROUGH THIS LINE ON INSPECTION, WHY?*/
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slide1 {
+	background-image: url('https://s-i.huffpost.com/gen/3891698/images/o-BLACK-CHILDREN-SCHOOL-facebook.jpg');
+}
+.slide2 {
+	background-image: url('https://guardian.ng/wp-content/uploads/2016/03/Nigerian-School-Children-The-Trent.jpg');
+}
+.slide3 {
+	background-image: url('http://anhede.se/wp-content/uploads/2018/04/child-mother-save-the-children-senegal-africa-ngo-photographer-photojournalist.jpg');
+}
+
+.slide-content {
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: rgba(23,141,186,0.6);
+	padding: 2%;
+	border-radius: 10px;
+}
+
+.slide-content h1 {
+	font-size: 4em;
+	font-weight: 800;
+}
+
+.arrow {
+	position: absolute;
+	top: 44.5%;
+}
+.arrow i {
+	font-size: 5em;
+}
+#arrow-left {
+	left: 2.5%;
+	z-index: 10;
+}
+#arrow-right {
+	right: 2.5%;
+}
+
+#devgoals {
+	position: relative;
+	background-color:rgba(241,241,241,1); /*255,83,13,0.8 255,146,13,0.8*/
+	width: 100%;
+	height: 100%;
+}
+
+#devgoals .container {
+	position: absolute;
+	height: 500px;
+	width: 1000px;
+	display: flex; /* IMPORTANT */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 1px 5px rgba(255,83,13,0.5);
+}
+
+#devgoals .container .box {
+	height: 500px;
+	width: 25%;
+	position: relative; /* NEEDED TO KEEP ABSOLUTE CHILDREN IN BOX */
+	transition: 0.5s;
+}
+
+#devgoals .container .box:hover {
+	transform: scale(1.05);
+	z-index: 10;
+	box-shadow: 0 1px 5px rgba(255,83,13,0.5);
+}
+
+#devgoals .container .box .thumb img {
+	width: 100%;
+	height: 100%;
+	display: block; /*needed to remove gap from below top images */
+}
+
+#devgoals .container .box .details .content img {
+	width: 75%;
+	height: 75%;
+	display: block;
+}
+
+#devgoals .container .box .details {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+}
+
+#devgoals .container .box .thumb {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+}
+
+#devgoals .container .box:nth-child(odd) .thumb {
+	bottom: 0;
+	left: 0;
+}
+
+#devgoals .container .box:nth-child(even) .details {
+	bottom: 0;
+	left: 0;
+}
+
+#devgoals .container .box:nth-child(1) .details {
+	background-color: #e0263d;
+}
+#devgoals .container .box:nth-child(2) .details {
+	background-color: #d8a238;
+}
+#devgoals .container .box:nth-child(3) .details {
+	background-color: #4c9a45;
+}
+#devgoals .container .box:nth-child(4) .details {
+	background-color: #c0202f;
+}
+
+#devgoals .container .box .details .content {
+	position: relative;
+	top: calc(50% + 16px);
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+#devgoals .container .box:hover .details .content {
+	top: 50%;
+}
+
+#devgoals .container .box .details .content img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#devgoals .container .box .details .content a {
+	display: inline-block;
+	padding: 5px 20px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	text-decoration: none;
+	transform: scale(0);
+	transition: 0.5s;
+}
+#devgoals .container .box:hover .details .content a {
+	transform: scale(1);
+}
+#devgoals .container .box .details .content a:hover {
+	background-color: #fff;
+	color: #262626;
+}
+
+/* GOALS SECTION */
+.goals {
+    height: 30.5vw;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.goals .goal-text {
+	box-sizing: border-box;
+	text-align: left;
+	padding: 3vw;
+}
+
+.goal-text h1 {
+	padding: 0 0 1.5vw 0;
+	font-size: 5vw;
+}
+
+.goal-text p {
+	font-size: 2vw;
+}
+
+.goals .goal-img {
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+.goals .goal-img img {
+	width: 100%;
+	height: 100%;
+}
+
+#goal1 {
+	background-color: #e0263d;
+}
+#goal2 {
+	background-color: #d8a238;
+}
+#goal3 {
+	background-color: #4c9a45;
+}
+#goal4 {
+	background-color: #c0202f;
+}
+
+/* SOCIAL */
+.social {
+	padding: 1.5em 0;
+	background-color:rgba(241,241,241,1);
+	width: 100%;
+}
+.social i {
+	font-size: 4em;
+	color: #20C1FF;
+	transition: 0.5s;
+}
+.social a:hover i {
+	color: #FF3E00;
+}
+
+/* FOOTER */
+footer {
+	/*height: 250px;*/
+	width: 100%;
+	background-color: #178DBA;
+}
+
+footer div {
+	text-align: left;
+}
+footer h2 {
+ 	font-size: 3em;
+}
+
+footer a.subscribe {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #FF3E00;
+	font-size: 1.3em;
+	text-decoration: none;
+	background-color: #f1f1f1;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+footer a.subscribe:hover {
+	color: #20C1FF;
+}
+
+footer .info {
+	display: block;
+	padding: 10px 0;
+	font-size: 1.1em;
+	color: #fff;
+}
+
+footer nav ul li {
+	list-style-type: none;
+	color: #fff;
+	line-height: 1.4;
+}
+footer a {
+	text-decoration: none;
+	}
+footer nav a:hover {
+	text-decoration: underline;
+}
+footer nav h3 {
+	font-size: 1.5em;
+}
+footer nav {
+	padding: 1em;
+}
+@media only screen and (min-width: 1024px) and (orientation: portrait){
+	#devgoals {
+		height: 50%;
+	}
+	.slideshow .arrow {
+		position: absolute;
+		top: 47%;
+	}
+}
+@media only screen and (max-width: 1200px){
+	.slide-content {
+		padding: 1%;
+	}
+
+	.slide-content h1 {
+		font-size: 3.5em;
+	}
+	.goals {
+		height: 34.5vw;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.slide-content {
+		padding: 1%;
+		max-width: 80%;
+	}
+
+	.slide-content h1 {
+		font-size: 3em;
+	}
+
+	#devgoals {
+		/*height: 100*/ height: auto;
+		padding: 20vw 0;
+	}
+
+	#devgoals .container {
+		width: 100%;
+		top: 80%;
+		padding: 0 10px; /*needed to stop elements moving around*/
+		box-sizing: border-box;
+		box-shadow: none;
+	}
+
+	#devgoals .container .box {
+		height: 250px;
+	}
+	#devgoals .container .box .thumb {
+		display: none;
+	}
+	.goals .goal-text {
+		padding: 3rem 3rem 2em 3rem; /*CHANGE TO % OR VW*/
+	}
+	.goals {
+		height: 35vw;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.slideshow {
+		top: ; /*PUSH SLIDESHOW DOWN*/
+	}
+	#logo a {
+	font-size: 2.5em;
+	}
+}
+
+@media only screen and (max-width:902px){
+	.goals .goal-text {
+		padding: 1vw 2.75vw;	
+	}
+
+	.goal-text p {
+		font-size: 2.25vw;
+	}
+	#devgoals {
+		/*height: 100*/ height: auto;
+		padding: 25vw 0 20vw 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait){
+	.arrow {
+		position: absolute;
+		top: 46%;
+	}
+}
+
+@media only screen and (max-width:767px){/*CHANGED TO 767 FOR NAV I FAULT CAUSED IN IPAD VIEW AND 167 BREAKING POINT
+
+	/*header {
+		line-height: 1.2;
+		height: 7.5em;
+	}*/
+	header div:nth-child(1){
+		order: 2;
+	}
+	header div:nth-child(2){
+		order: 1;
+	}
+	header div:nth-child(3){
+		order: 3;
+	}
+	header div:nth-child(4){
+		order: 4;
+	}
+
+	#donate {
+	 	padding: 5px 0;
+	}
+	#nav i {
+		transform: translateY(-50%);
+	}
+
+	#devgoals .container .box .details .content {
+		height: 100%;
+	}
+	#devgoals {
+	    height: auto;
+		padding: 50vw 0;
+	}
+
+	#devgoals .container {
+		display: initial;
+		top: 50%;
+	}
+
+	#devgoals .container .box {
+		height: 250px;
+		width: 50%;
+		float: left;
+	}
+
+	.slide-content {
+		padding: 1%;
+		box-sizing: border-box;
+		max-width: 70%;
+	}
+
+	.slide-content h1 {
+		font-size: 3em;
+	}
+	/*.goals {
+		height: 47.5vw;
+	}
+	.goals .goal-text {
+		padding: 2.5vw;
+	}
+	/*
+	.goal-text h1 {
+		font-size: 2.75em;
+		padding: 0 0 1rem 0;
+	}*/
+	.goal-text h1 {
+		padding: 0 0 0.5vw 0;
+		font-size: 4.3vw;
+	}
+
+	.goals .goal-text p {
+		font-size: 2.5vw;
+	}
+
+	.social i {
+		font-size: 3em;
+	}
+	footer a.subscribe {
+		padding: 10px 10px;
+		font-size: 1.3em;
+	}
+
+	footer .info {
+		padding: 10px 0;
+		font-size: 1em;
+	}
+	footer nav {
+	padding: 1em 0;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+	.goals {
+		height: 45vw;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.goals .col-xs-12.goal-text{
+		flex-basis: 50%; /*58.333*/
+    	max-width: 50%;
+	}
+	.goals .col-xs-12.goal-img{
+		flex-basis: 50%;/*41.667*/
+    	max-width: 50%;
+	}
+}
+
+@media only screen and (max-width: 599px){
+	.goals  {
+		height: auto !important;
+	}
+	.goal-text h1 {
+		padding: 0 0 1.5vw 0;
+	}
+	.goals .goal-text p {
+		font-size: 3.5vw;
+	}
+
+	header #search {
+		flex-basis: 16.66%;
+    	max-width: 16.66%;
+	}
+	header #nav {
+		flex-basis: 16.66%;
+    	max-width: 16.66%;
+	}
+	header #donate {
+		flex-basis: 66.66%;
+		max-width: 66.66%;
+	}
+	/* USEFUL TECHNIQUE !!!*/
+	#goal2 div:nth-child(1){
+		order: 2;
+	}
+	#goal2 div:nth-child(2){
+		order: 1;
+	}
+
+	#goal4 div:nth-child(1){
+		order: 2;
+	}
+	#goal4 div:nth-child(2){
+		order: 1;
+	}
+}
+
+@media only screen and (max-width: 480px){
+
+	
+
+	.slide .slide-content h1 {
+		font-size: 2.5em;
+	}
+
+	#devgoals .container .box {
+		width: 100%;
+		height: 250px;
+	}
+
+	#devgoals {
+	    height: auto;
+		padding: 0;
+	}
+
+	#devgoals .container {
+		position: relative;
+		top: 0;
+	}
+
+	#devgoals .container .box .details .content {
+		top: calc(55% + 16px);
+	}
+
+#devgoals .container .box:hover .details .content {
+		top: 55%;
+	}
+	.goals .goal-text {
+		padding: 2vw 2.75vw;
+	}
+	.goals .goal-text p {
+		font-size: 4vw;
+	}
+}
+
+

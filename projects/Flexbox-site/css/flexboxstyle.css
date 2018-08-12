@@ -1,0 +1,227 @@
+body {
+	font-family: 'open-sans', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+}
+header, section, footer { /*SOLVES MARGIN RIGHT OF PAGE */
+	overflow: hidden;
+}
+.container {
+	margin: auto;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+i {
+	padding-right: 5px;
+}
+.primary-text {
+	color: #56A79A;
+}
+/*Header*/
+#main-header {
+	border-bottom:1px solid #56A79A;
+	line-height: 1.2;
+}
+#main-header a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+
+}
+/*Navbar*/
+#navbar {
+	text-transform: uppercase; /*Easier to change*/
+}
+
+#navbar li {
+	display: inline-block;
+	padding: 5px 30px 0 0;/*Not a problem if its on the li and not the a*/
+	list-style-type: none;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: #888;
+}
+
+#navbar a:hover, #navbar li.current a{
+	color: #56A79A; /* Could use sass to assign colour to variable and not have to repeat*/
+	border-bottom: 3px solid #56A79A;
+}
+
+/*Showcase*/
+#showcase {
+	background-image: url(https://ksassets.timeincuk.net/wp/uploads/sites/54/2018/03/DSCF0428-1024x683.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: none;
+	border-bottom: 1px solid #56A79A;
+	margin-bottom: 30px; /*push down section below*/
+}
+
+#showcase .row {
+	height: 600px;
+}
+
+#showcase h1 {
+	font-size: 3em;
+	margin: 0; /*remove natural margin below h1*/
+	padding-bottom: 20px;/*pushes h1 up*/
+}
+
+#showcase p {
+	color: #ccc;
+	margin: 0;
+}
+
+#showcase .showcase-content {
+	background-color: #333;
+	color: #fff;
+	border-radius: 90px;
+	padding: 30px;
+	opacity: 0.9;
+}
+/* Features*/
+#features h2 {
+	font-size: 2em;
+	margin: 0;
+}
+
+#features p {
+	color: #888;
+	margin: 0 0 50px 0;
+}
+
+#features i {
+	font-size: 4em;
+	color: #56A79A;
+	padding: 0;
+}
+
+#features h4 {
+	margin: 20px 0;
+}
+/*info*/
+#info {
+	background: url(../img/blurred_lines.jpeg) no-repeat center;
+	background-size: cover;
+	color: black;
+}
+
+#info h2 {
+	font-size: 2em;
+	margin: 0;
+}
+
+#info ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#info li {
+	line-height: 1.8;
+	font-size: 1.2em;
+}
+
+/*Company*/
+#company {
+	background-color: #333; /* dark grey*/
+	color: #fff;
+	padding: 10px 0;
+}
+
+#company h4 {
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+#company ul {
+	padding: 0;
+	list-style-type: none;
+	line-height: 1.8;
+}
+
+#company input[type="text"]{/*targeting input text-box to make bigger*/
+	padding: 7px;
+}
+
+#company button {
+	background-color: #222;/*black*/
+	color: #fff;
+	padding: 10px;
+	border: 0px;
+
+}
+/*footer*/
+#main-footer {
+	background-color: #56A79A;
+	color: white;
+}
+
+/* Page*/
+.page {
+	margin-bottom: 40px;
+}
+
+/*services*/
+#services-main ul {
+	padding: 0;
+	list-style-type: none;
+	color: white;
+}
+
+#services-main ul li {
+	padding: 10px;
+}
+
+#services-main ul li:nth-child(odd){/* nth-child is useful*/
+	background-color: #222;
+}
+
+#services-main ul li:nth-child(even){/* nth-child is useful*/
+	background-color: #56A79A;
+}
+
+/*contact*/
+#contact-main form {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+#contact-main form input[type="text"]{
+	width: 50%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+#contact-main form textarea {
+	width: 50%;
+	height: 100px;
+}
+
+#contact-main form button {
+	width: 50%;
+	padding: 10px 0;
+	border: none;
+	background-color: #222;
+	color: #fff;
+}
+
+#contact-main form label {
+	text-transform: uppercase;
+}
+/* Media queries */
+
+@media only screen and (max-width: 768px){
+	#showcase h1 {
+		font-size: 2em;	
+		padding-bottom: 15px;
+		line-height: 1.1;
+	}
+}
+
