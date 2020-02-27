@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>THINGS WE &#8211; WordPress Test Site</title>
+	<atom:link href="http://https://odunopeweb.github.io/projects/smart-parasites/category/things-we/feed/" rel="self" type="application/rss+xml" />
+	<link>http://https://odunopeweb.github.io/projects/smart-parasites</link>
+	<description>First Wordpress test site</description>
+	<lastBuildDate>
+	Thu, 06 Feb 2020 22:51:29 +0000	</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.4</generator>
+	<item>
+		<title>PHOTO ART BY ANNE LOMBERG</title>
+		<link>http://https://odunopeweb.github.io/projects/smart-parasites/photo-art-by-anne-lomberg/</link>
+				<comments>http://https://odunopeweb.github.io/projects/smart-parasites/photo-art-by-anne-lomberg/#respond</comments>
+				<pubDate>Mon, 25 Nov 2019 17:43:27 +0000</pubDate>
+		<dc:creator><![CDATA[Mrrmillerr]]></dc:creator>
+				<category><![CDATA[THINGS WE]]></category>
+
+		<guid isPermaLink="false">http://https://odunopeweb.github.io/projects/smart-parasites/?p=97</guid>
+				<description><![CDATA[]]></description>
+								<content:encoded><![CDATA[]]></content:encoded>
+							<wfw:commentRss>http://https://odunopeweb.github.io/projects/smart-parasites/photo-art-by-anne-lomberg/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>DEATHBED DREAMS</title>
+		<link>http://https://odunopeweb.github.io/projects/smart-parasites/deathbed-dreams/</link>
+				<comments>http://https://odunopeweb.github.io/projects/smart-parasites/deathbed-dreams/#respond</comments>
+				<pubDate>Wed, 06 Nov 2019 14:58:19 +0000</pubDate>
+		<dc:creator><![CDATA[Mrrmillerr]]></dc:creator>
+				<category><![CDATA[THINGS WE]]></category>
+
+		<guid isPermaLink="false">http://https://odunopeweb.github.io/projects/smart-parasites/?p=55</guid>
+				<description><![CDATA[]]></description>
+								<content:encoded><![CDATA[]]></content:encoded>
+							<wfw:commentRss>http://https://odunopeweb.github.io/projects/smart-parasites/deathbed-dreams/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Different Author Post</title>
+		<link>http://https://odunopeweb.github.io/projects/smart-parasites/different-author-post/</link>
+				<comments>http://https://odunopeweb.github.io/projects/smart-parasites/different-author-post/#respond</comments>
+				<pubDate>Mon, 04 Nov 2019 16:04:25 +0000</pubDate>
+		<dc:creator><![CDATA[Tommillerr]]></dc:creator>
+				<category><![CDATA[THINGS WE]]></category>
+
+		<guid isPermaLink="false">http://https://odunopeweb.github.io/projects/smart-parasites/?p=30</guid>
+				<description><![CDATA[Test to see if author link function works: Test post with a different author to test &#60;a class=&#8221;blog-post__author-link&#8221; href=&#8221;&#60;?php get_author_posts_url(get_the_author_meta(&#8216;ID&#8217;)) ?&#62;&#8221;&#62;]]></description>
+								<content:encoded><![CDATA[<p>Test to see if author link function works:</p>
+<p>Test post with a different author to test &lt;a class=&#8221;blog-post__author-link&#8221; href=&#8221;&lt;?php get_author_posts_url(get_the_author_meta(&#8216;ID&#8217;)) ?&gt;&#8221;&gt;</p>
+]]></content:encoded>
+							<wfw:commentRss>http://https://odunopeweb.github.io/projects/smart-parasites/different-author-post/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Hello world!</title>
+		<link>http://https://odunopeweb.github.io/projects/smart-parasites/hello-world/</link>
+				<comments>http://https://odunopeweb.github.io/projects/smart-parasites/hello-world/#comments</comments>
+				<pubDate>Thu, 31 Oct 2019 20:23:39 +0000</pubDate>
+		<dc:creator><![CDATA[Mrrmillerr]]></dc:creator>
+				<category><![CDATA[THINGS WE]]></category>
+
+		<guid isPermaLink="false">http://https://odunopeweb.github.io/projects/smart-parasites/?p=1</guid>
+				<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging! Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></description>
+								<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging! Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>
+]]></content:encoded>
+							<wfw:commentRss>http://https://odunopeweb.github.io/projects/smart-parasites/hello-world/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>
